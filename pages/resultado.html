@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado do Jogo</title>
+
+    <link rel="stylesheet" href="../css/resultado.css"> <!-- Certifique-se de que o caminho está correto -->
+</head>
+
+<body>
+    <div class="background">
+        <img src="../images/tela-resultado.png" alt="Logotipo do jogo Super Memory" style="width: 100%; height: 340%;">
+      </div>
+      <div class="background"></div>
+      <div class="resultado">
+          <h1>Resultados</h1>
+          <p id="playerName"></p>
+          <p id="finalScore"></p>
+          <p id="finalTime"></p>
+          <button onclick="goBack()">Jogar Novamente</button>
+      </div>
+      
+      <script>
+          const playerName = localStorage.getItem('player') || 'Desconhecido';
+          const finalScore = localStorage.getItem('finalScore') || '0';
+          const finalTime = localStorage.getItem('finalTime') || '0';
+      
+          document.getElementById('playerName').innerText = `Jogador: ${playerName}`;
+          document.getElementById('finalScore').innerText = `Pontuação: ${finalScore}`;
+          document.getElementById('finalTime').innerText = `Tempo: ${finalTime} segundos`;
+
+      
+
+          function goBack() {
+    window.location.href = 'game.html'; 
+}
+
+    </script>
+</body>
+
+</html>

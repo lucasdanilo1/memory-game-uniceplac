@@ -1,0 +1,76 @@
+body,
+html {
+  margin: 0;
+  height: 100%;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./images/super-memory.png');
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  /* Garante que nada ultrapasse os limites */
+  z-index: -1;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  padding-top: 500px;
+}
+
+.login__header {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 0;
+}
+
+.login__header img {
+  width: 20px;
+}
+
+.login__header h1 {
+  color: #333;
+  font-size: 1.5em;
+}
+
+.login__input {
+  border: 2px solid #333;
+  border-radius: 8px;
+  color: #333;
+  font-size: 1em;
+  margin-bottom: 15px;
+  max-width: 300px;
+  outline: none;
+  padding: 15px;
+  width: 100%;
+}
+
+.login__button {
+  background-color: #00b5cc;
+  border: 3px solid #b2df28;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1em;
+  max-width: 300px;
+  padding: 15px;
+  width: 100%;
+}
+
+.login__button:disabled {
+  background-color: #eee;
+  border: 2px solid #969595;
+  color: #aaa;
+  cursor: auto;
+}

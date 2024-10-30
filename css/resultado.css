@@ -1,0 +1,58 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Stencil Std', fantasy;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Mantenha isso para alinhar no início */
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./images/super-memory.png');
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.resultado {
+  /* padding: 30px;
+  border-radius: 15px; */
+  /* color: #000; */
+  font-size: 1.5em;
+  text-align: center;
+  width: 300px;
+  margin-top: 360px; /* Ajuste a distância do topo */
+  /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); */
+}
+
+.resultado h1 {
+  margin: 0 0 10px;
+  font-size: 2em;
+  color: #2c3e50;
+}
+
+.resultado p {
+  margin: 5px 0;
+}
+
+.resultado button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.resultado button:hover {
+  background-color: #2980b9;
+}
