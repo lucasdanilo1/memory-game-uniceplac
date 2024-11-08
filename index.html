@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="pt">
 
 <head>
@@ -27,4 +27,59 @@
   </form>
 </body>
 
+</html>
+
+ -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nota Máxima</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            text-align: center;
+            margin-top: 50px;
+            overflow: hidden;
+        }
+
+        h1 {
+            color: #007bff;
+            font-size: 36px;
+            opacity: 0;
+            transform: translateY(-30px);
+            animation: fadeInUp 2s ease-out forwards, pulse 1s infinite alternate;
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Nos dê a nota máxima, professor!</h1>
+</body>
 </html>
